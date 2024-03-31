@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body class="flex flex-col justify-center items-center">
-    <div class="w-[80%] bg-slate-400 h-[400px] m-auto">
-        <form id="form" class="flex gap-4 justify-center items-start mt-[10px] p-[5px] w-[100%]">
-            <input type="color" class="h-10" name="color" id="seed-color">
-            <select name="color" id="theme" class="border border-black shadow-md p-2">
+    <div class="w-[600px] max-w-[70%] h-[400px] m-auto">
+        <form id="form" class="flex max-sm:flex-col gap-4 justify-center items-center mt-[10px] p-[5px]">
+            <input type="color" class="h-12 max-sm:w-[30%]" name="color" id="seed-color">
+            <select name="color" id="theme" class="border border-black shadow-md p-2 w-[40%] max-sm:w-[100%]">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
                 <option value="monochrome-light">Monochrome-light</option>
@@ -19,7 +19,7 @@
                 <option value="analogic-complement">Analogic-complement</option>
                 <option value="triad">Triad</option>
             </select>
-            <button class="border border-black shadow-md p-2">Get color scheme</button>
+            <button class="border border-black shadow-md p-2 max-sm:w-[70%]">Get color scheme</button>
         </form>
         <div class="flex" id="color-container">
             
