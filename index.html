@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="flex flex-col justify-center items-center">
-    <div class="w-[600px] max-w-[70%] h-[400px] m-auto">
-        <form id="form" class="flex max-sm:flex-col gap-4 justify-center items-center mt-[10px] p-[5px]">
+<body>
+    <div class="w-[80%] max-sm:w-[100px] h-[550px] mx-auto border border-red-700">
+        <form id="form" class="flex max-sm:flex-col gap-4 justify-center items-center mt-[10px] p-[5px] w-[100%]">
             <input type="color" class="h-12 max-sm:w-[30%]" name="color" id="seed-color">
             <select name="color" id="theme" class="border border-black shadow-md p-2 w-[40%] max-sm:w-[100%]">
                 <option value="monochrome">Monochrome</option>
@@ -21,9 +21,7 @@
             </select>
             <button class="border border-black shadow-md p-2 max-sm:w-[70%]">Get color scheme</button>
         </form>
-        <div class="flex" id="color-container">
-            
-            
+        <div class="flex mt-[50px] h-[400px] w-[70%] border border-purple-900 max-sm:grid max-sm:grid-cols-6"  id="color-container">
         </div>
     </div>
     

@@ -1,8 +1,7 @@
-let form = document.getElementById('form')
-let seedColor = document.getElementById('seed-color')
-let theme = document.getElementById('theme')
-let colorContainer = document.getElementById('color-container')
-
+const form = document.getElementById('form')
+const seedColor = document.getElementById('seed-color')
+const theme = document.getElementById('theme')
+const colorContainer = document.getElementById('color-container')
 
 
 form.addEventListener('submit', (e) => {
@@ -20,14 +19,14 @@ form.addEventListener('submit', (e) => {
 
         colorHtml +=  `
        
-            <div class="flex flex-col h-[300px]">
-                <img src="${color.image.bare}" class="h-[100%]">
-                <p class="text-center">${color.hex.value}</p>
+            <div class="flex flex-col h-[100%] max-sm:w-[100%] max-sm:grid max-sm:grid-cols-2 max-sm:h-[50px]">
+                <img src="${color.image.bare}" class="h-[100%] max-sm:[w-100%]">
+                <p class="text-center max-sm:text-[10px]">${color.hex.value}</p>
             </div>
       
         `
+        colorContainer.style.display = 'flex'
         colorContainer.innerHTML = colorHtml
-       
        }
     })
 })
