@@ -25,7 +25,6 @@ form.addEventListener('submit', (e) => {
             </div>
       
         `
-        colorContainer.style.display = 'flex'
         colorContainer.innerHTML = colorHtml
        }
     })
